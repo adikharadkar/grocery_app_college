@@ -7,3 +7,9 @@ def home(request):
 
 def category(request):
 	return render(request, 'grocery_app/category.html')
+
+def category_fruits_vegetables(request):
+	return render(request, 'grocery_app/categories/fruits-and-vegetables.html')
+
+def category_snack_store(request):
+	return render(request, 'grocery_app/categories/snack-store.html')

@@ -12,8 +12,8 @@
 <body>
 	<nav class="navigation" id="navigation">
 		<ul class="nav-ul">
-			<h1><li class="nav-tab"><a href="home.html" class="nav-title">Grocery App</a></li></h1>
-			<li class="nav-tab"><a href="category.html" class="nav-link"><b>Shop by Category</b></a></li>
+			<h1><li class="nav-tab"><a href="{% url 'app-home' %}" class="nav-title">Grocery App</a></li></h1>
+			<li class="nav-tab"><a href="{% url 'app-categories' %}" class="nav-link"><b>Shop by Category</b></a></li>
 			<li class="nav-tab"><input type="search" name="search" placeholder="Search Products" /></li>
 			<li class="nav-tab"><a href="#" class="nav-link"><b>My Basket</b></a></li>
 			<li class="nav-tab"><a href="#" class="nav-link"><b>LogIn/SignUp</b></a></li>
@@ -43,8 +43,8 @@
 	  </div>
 
 	  <!-- Next and previous buttons -->
-	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	  <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
 	</div>
 	<br>
 
@@ -107,7 +107,7 @@
 			</a>
 		</div>
 		<div class="product product-more">
-			<a class="product-link" href="category-fruits.html"><span class="material-symbols-outlined">arrow_forward_ios</span></a>
+			<a class="product-link" href="{% url 'category-fruits-vegetables' %}"><span class="material-symbols-outlined">arrow_forward_ios</span></a>
 		</div>
 	</div>
 
@@ -155,7 +155,7 @@
 			</a>
 		</div>
 		<div class="product product-more">
-			<a class="product-link" href="category-beverages.html"><span class="material-symbols-outlined">arrow_forward_ios</span></a>
+			<a class="product-link" href="{% url 'category-snack-store' %}"><span class="material-symbols-outlined">arrow_forward_ios</span></a>
 		</div>
 	</div>
 

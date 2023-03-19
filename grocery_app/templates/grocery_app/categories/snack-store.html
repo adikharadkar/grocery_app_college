@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'grocery_app/css-files/main.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<title>Snack Store</title>
+</head>
+<body>
+	<nav class="navigation" id="navigation">
+		<ul class="nav-ul">
+			<h1><li class="nav-tab"><a href="{% url 'app-home' %}" class="nav-title">Grocery App</a></li></h1>
+			<li class="nav-tab"><a href="{% url 'app-categories' %}" class="nav-link"><b>Shop by Category</b></a></li>
+			<li class="nav-tab"><input type="search" name="search" placeholder="Search Products" /></li>
+			<li class="nav-tab"><a href="#" class="nav-link"><b>My Basket</b></a></li>
+			<li class="nav-tab"><a href="#" class="nav-link"><b>LogIn/SignUp</b></a></li>
+		</ul>
+	</nav>
+	<main class="fruits-vegetables__main">
+		<table class="fruits-vegetables__table">
+			<tbody>
+				<tr class="fruits-vegetables__row">
+					<td class="fruits-vegetables__col">
+						<a href="#">
+							<div class="fruits-vegetables__outer_div">
+								<img src="{% static 'grocery_app/images/snack-store/dairy-milk.jpg' %}" width="300px" height="200px" class="fruits-vegetables__img">
+								<div class="fruits-vegetables__inner_div">
+									<h3 class="fruits-vegetables__name text_cs">Dairy Milk Silk, 1</h3>
+									<p class="fruits-vegetables__price text_cs"><b>MRP: Rs. 119</b></p>
+									<div class="product__rating">
+										<p class="product__rating_short">4.3</p>
+										<div class="product__rating_detail">
+											<span class="material-symbols-outlined text_cs">grade</span>
+											<em class="product__rating_details text_cs">754 ratings & 19 reviews</em>
+										</div>
+									</div>
+									<div class="fruits-vegetables__delivery"><span class="material-symbols-outlined truck text_cs">local_shipping</span><p class="product__delivery">Standard: Tomorrow 10:30AM-9:00PM</p></div>
+								</div>
+							</div>
+						</a>
+					</td>
+				</tr>
+				<tr class="fruits-vegetables__row">
+					<td class="fruits-vegetables__col">
+						<a href="#">
+							<div class="fruits-vegetables__outer_div">
+								<img src="{% static 'grocery_app/images/snack-store/lays.jpg' %}" width="300px" height="200px" class="fruits-vegetables__img">
+								<div class="fruits-vegetables__inner_div">
+									<h3 class="fruits-vegetables__name text_cs">Lay's India's Magic Masala, 73g</h3>
+									<p class="fruits-vegetables__price text_cs"><b>MRP: Rs. 20</b></p>
+									<div class="product__rating">
+										<p class="product__rating_short">4.3</p>
+										<div class="product__rating_detail">
+											<span class="material-symbols-outlined text_cs">grade</span>
+											<em class="product__rating_details text_cs">754 ratings & 19 reviews</em>
+										</div>
+									</div>
+									<div class="fruits-vegetables__delivery"><span class="material-symbols-outlined truck text_cs">local_shipping</span><p class="product__delivery">Standard: Tomorrow 10:30AM-9:00PM</p></div>
+								</div>
+							</div>
+						</a>
+					</td>
+				</tr>
+				<tr class="fruits-vegetables__row">
+					<td class="fruits-vegetables__col">
+						<a href="#">
+							<div class="fruits-vegetables__outer_div">
+								<img src="{% static 'grocery_app/images/snack-store/maggie.jpg' %}" width="300px" height="200px" class="fruits-vegetables__img">
+								<div class="fruits-vegetables__inner_div">
+									<h3 class="fruits-vegetables__name text_cs">Maggie, 2 Cakes</h3>
+									<p class="fruits-vegetables__price text_cs"><b>MRP: Rs. 26</b></p>
+									<div class="product__rating">
+										<p class="product__rating_short">4.3</p>
+										<div class="product__rating_detail">
+											<span class="material-symbols-outlined text_cs">grade</span>
+											<em class="product__rating_details text_cs">754 ratings & 19 reviews</em>
+										</div>
+									</div>
+									<div class="fruits-vegetables__delivery"><span class="material-symbols-outlined truck text_cs">local_shipping</span><p class="product__delivery">Standard: Tomorrow 10:30AM-9:00PM</p></div>
+								</div>
+							</div>
+						</a>
+					</td>
+				</tr>
+				<tr class="fruits-vegetables__row">
+					<td class="fruits-vegetables__col">
+						<a href="#">
+							<div class="fruits-vegetables__outer_div">
+								<img src="{% static 'grocery_app/images/snack-store/mayonnaise.jpg' %}" width="300px" height="200px" class="fruits-vegetables__img">
+								<div class="fruits-vegetables__inner_div">
+									<h3 class="fruits-vegetables__name text_cs">Mayonnaise, 250 g</h3>
+									<p class="fruits-vegetables__price text_cs"><b>MRP: Rs. 125</b></p>
+									<div class="product__rating">
+										<p class="product__rating_short">4.3</p>
+										<div class="product__rating_detail">
+											<span class="material-symbols-outlined text_cs">grade</span>
+											<em class="product__rating_details text_cs">754 ratings & 19 reviews</em>
+										</div>
+									</div>
+									<div class="fruits-vegetables__delivery"><span class="material-symbols-outlined truck text_cs">local_shipping</span><p class="product__delivery">Standard: Tomorrow 10:30AM-9:00PM</p></div>
+								</div>
+							</div>
+						</a>
+					</td>
+				</tr>
+				<tr class="fruits-vegetables__row">
+					<td class="fruits-vegetables__col">
+						<a href="#">
+							<div class="fruits-vegetables__outer_div">
+								<img src="{% static 'grocery_app/images/snack-store/parleg.jpg' %}" width="300px" height="200px" class="fruits-vegetables__img">
+								<div class="fruits-vegetables__inner_div">
+									<h3 class="fruits-vegetables__name text_cs">Parle G, 4 Packs</h3>
+									<p class="fruits-vegetables__price text_cs"><b>MRP: Rs. 22</b></p>
+									<div class="product__rating">
+										<p class="product__rating_short">4.3</p>
+										<div class="product__rating_detail">
+											<span class="material-symbols-outlined text_cs">grade</span>
+											<em class="product__rating_details text_cs">754 ratings & 19 reviews</em>
+										</div>
+									</div>
+									<div class="fruits-vegetables__delivery"><span class="material-symbols-outlined truck">local_shipping</span><p class="product__delivery text_cs">Standard: Tomorrow 10:30AM-9:00PM</p></div>
+								</div>
+							</div>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+</body>
+</html>

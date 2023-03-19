@@ -12,8 +12,8 @@
 <body>
 	<nav class="navigation" id="navigation">
 		<ul class="nav-ul">
-			<h1><li class="nav-tab"><a href="home.html" class="nav-title">Grocery App</a></li></h1>
-			<li class="nav-tab"><a href="category.html" class="nav-link"><b>Shop by Category</b></a></li>
+			<h1><li class="nav-tab"><a href="{% url 'app-home' %}" class="nav-title">Grocery App</a></li></h1>
+			<li class="nav-tab"><a href="{% url 'app-categories' %}" class="nav-link"><b>Shop by Category</b></a></li>
 			<li class="nav-tab"><input type="search" name="search" placeholder="Search Products" /></li>
 			<li class="nav-tab"><a href="#" class="nav-link"><b>My Basket</b></a></li>
 			<li class="nav-tab"><a href="#" class="nav-link"><b>LogIn/SignUp</b></a></li>
@@ -24,7 +24,7 @@
 			<tbody>
 				<tr class="category__row">
 					<td class="category__col">
-						<a href="category-fruits.html">
+						<a href="{% url 'category-fruits-vegetables' %}">
 							<div class="category__div">
 								<img src="{% static 'grocery_app/images/categories/Fruits-and-Vegetables.jpg' %}" width="350px" height="250px">
 								<h3 class="category__name">Fruits & Vegetables</h3>
@@ -32,7 +32,7 @@
 						</a>
 					</td>
 					<td class="category__col">
-						<a href="category-beverages.html">
+						<a href="{% url 'category-snack-store' %}">
 							<div class="category__div">
 								<img src="{% static 'grocery_app/images/categories/beverage.jpg' %}" width="350px" height="250px">
 								<h3 class="category__name">Beverages</h3>
