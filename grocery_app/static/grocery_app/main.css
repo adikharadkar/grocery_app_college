@@ -1,0 +1,437 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    text-align: center;
+}
+
+* {
+	font-family: "PT Sans", sans-serif;
+}
+
+.nav-title {
+	font-size: 25px;
+	margin-right: 50px;
+	color: white;
+}
+
+.nav-link {
+	font-size: 18px;
+	color: white;
+}
+
+.navigation {
+	background: #ec008c;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 5px;
+}
+.nav-ul {
+	display: flex;
+}
+.nav-tab {
+	padding-left: 10px;
+	text-decoration: none;
+	list-style: none;
+	margin: auto;
+}
+a {
+	text-decoration: none;
+}
+input {
+	width: 550px;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+}
+input:focus {
+	outline: none;
+}
+::placeholder {
+	font-size: 15px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#out-div {
+	width: 100%;
+	margin-top: 50px;
+	text-align: center;
+}
+.category-tab {
+	display: inline-flex;
+	margin: 10px;
+	padding: 15px;
+	background-color: #f5f5f5;
+	color: black;;
+	border-radius: 10px;
+	font-size: 18px;
+	transition-duration: 0.7s;
+	transition-timing-function: ease-out;
+}
+.category-tab:hover {
+	background-color: #452c63;
+	color: white;
+}
+.category-link {
+	color: black;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+.category-link:hover {
+	color: white;
+}
+#prod-category-fruitsnveg, 
+#prod-category-beverages, 
+#prod-category-snack-store, 
+#prod-category-cleaning-household, 
+#prod-category-beauty-hygiene,
+#prod-category-home-kitchen {
+	text-align: center;
+	margin-top: 75px;
+}
+.product {
+	display: inline-flex;
+	padding: 10px;
+	margin: 20px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 5px 5px 5px #eee;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
+.product:hover {
+	box-shadow: 0 20px 20px 20px #eee;
+}
+.product-link {
+	color: black;
+	text-decoration: none;
+}
+.product-more {
+	border-radius: 100%;
+}
+
+/*PRODUCT.HTML*/
+.product__details {
+	display: inline-flex;
+	width: 75%;
+	box-shadow: 0 5px 5px 5px #ccc;
+	border-radius: 5px;
+}
+
+.product__div {
+	margin: 10px;
+}
+.product__brand {
+	color: purple;
+	text-decoration: underline;
+}
+.product__detail {
+	text-align: left;
+	margin-top: 50px;
+}
+.product__title {
+	font-size: 20px;
+}
+.product__tax_message {
+	font-size: 12px;
+	color: grey;
+}
+.product__rating_short {
+	background-color: #9FE2BF;
+	text-align: center;
+	width: 35px;
+	font-size: 13px;
+	border-radius: 5px;
+	padding: 5px;
+	color: darkgreen;
+}
+.product__rating {
+	display: flex;
+}
+.product__rating_detail {
+	margin-top: 5px;
+}
+.product__rating_details {
+	font-size: 14px;
+}
+.product__add_to_cart {
+	display: inline-flex;
+}
+.product__quantity {
+	width: 50px;
+	border: 1px solid #ccc;
+	margin-right: 5px;
+	text-align: center;
+	color: grey;
+}
+.product__cart_btn {
+	border: none;
+	background-color: #452c63;
+	color: white;
+	width: 200px;
+	font-size: 17px;
+	cursor: pointer;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+	margin-right: 20px;
+
+}
+.product__cart_btn:hover {
+	color: #452c63;
+	background-color: white;
+	border: 1px solid #452c63;
+}
+.product__save {
+	color: #452c63;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid #452c63;
+	width: 100px;
+	font-size: 17px;
+	cursor: pointer;
+}
+.product__delivery {
+	color: grey;
+	font-size: 14px;
+}
+.truck {
+	margin-top: 10px;
+	margin-right: 5px;
+}
+.product__delivery_time {
+	display: flex;
+	margin-top: 5px;
+}
+.product__description {
+	text-align: left;
+	width: 90%;
+	margin: auto;
+	margin-top: 80px;
+}
+.product__name {
+	font-size: 22px;
+}
+.product__other {
+	border-bottom: 1px solid #eee;
+	border-top: 1px solid #eee;
+}
+.product__other_info {
+	font-size: 17px;
+	padding-bottom: 5px;
+}
+.product__desc {
+	font-size: 13px;
+	color: #696969;
+}
+.product__reviews {
+	text-align: left;
+	margin:auto;
+	margin-top: 50px;
+	border: 1px solid #eee;
+	width: 75%;
+	padding: 20px;
+}
+.product__review {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	height: 50px;
+	width: 900px;
+	margin-top: 5px;
+}
+.product__review_btn {
+	color: #452c63;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid #452c63;
+	width: 100px;
+	font-size: 17px;
+	cursor: pointer;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+	margin-top: 10px;
+}
+.product__review_btn:hover {
+	color: white;
+	background-color: #452c63;
+	border: none;
+}
+.product__reviews_table {
+	margin: auto;
+}
+.product__reviews_msg {
+	
+	font-weight: lighter;
+	text-align: center;
+
+}
+.msg {
+	margin-top: 14px;
+	margin-right: 10px;
+}
+.product__reviews_message {
+	display: flex;
+	text-align: center;
+	margin: auto;
+	background-color: #eee;
+	padding-left: 10px;
+}
+.product__reviews_title {
+	font-weight: lighter;
+}
+.product__similar_snack {
+	text-align: left;
+	font-size: 20px;
+	font-weight: lighter;
+	border-bottom: 1px solid #eee;
+	width: 75%;
+	margin: auto;
+	padding-bottom: 20px;
+}
+#prod-category-snack-store {
+	margin-top: 60px;
+}
+.category__row {
+	margin: auto;
+	width: 75%;
+}
+.category__col {
+	padding: 20px;
+}
+.category__div {
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0 5px 5px 5px #eee;
+}
+.categories {
+	margin: auto;
+	display: inline-flex;
+}
+.category__table {
+	text-align: center;
+}
+.category__name {
+	color: #452c63;
+	font-weight: lighter;
+	font-size: 22px;
+}
+.fruits-vegetables__outer_div {
+	padding: 20px;
+	box-shadow: 0 5px 5px 5px #eee;
+	display: flex;
+	margin: 10px;
+}
+.fruits-vegetables__main {
+	margin: auto;
+	display: grid;
+	width: 50%;
+}
+.fruits-vegetables__inner_div {
+	float: right;
+	text-align: left;
+	margin-left: 100px;
+}
+.fruits-vegetables__name {
+	font-size: 22px;
+	font-weight: lighter;
+}
+.fruits-vegetables__delivery {
+	display: flex;
+}
+.star {
+	margin-top: 5px;
+}
+.text_cs {
+	color: black;
+}
+.product-name {
+	font-weight: lighter;
+	font-size: 20px;
+	color: #452c63;
+}
