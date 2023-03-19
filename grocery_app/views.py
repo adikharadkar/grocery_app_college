@@ -4,3 +4,6 @@ from django.http import HttpResponse
 # Create your views here.
 def home(request):
 	return render(request, 'grocery_app/home.html')
+
+def category(request):
+	return render(request, 'grocery_app/category.html')

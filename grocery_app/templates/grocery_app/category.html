@@ -1,0 +1,83 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'grocery_app/css-files/main.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<title>Categories</title>
+</head>
+<body>
+	<nav class="navigation" id="navigation">
+		<ul class="nav-ul">
+			<h1><li class="nav-tab"><a href="home.html" class="nav-title">Grocery App</a></li></h1>
+			<li class="nav-tab"><a href="category.html" class="nav-link"><b>Shop by Category</b></a></li>
+			<li class="nav-tab"><input type="search" name="search" placeholder="Search Products" /></li>
+			<li class="nav-tab"><a href="#" class="nav-link"><b>My Basket</b></a></li>
+			<li class="nav-tab"><a href="#" class="nav-link"><b>LogIn/SignUp</b></a></li>
+		</ul>
+	</nav>
+	<main class="categories">
+		<table class="category__table">
+			<tbody>
+				<tr class="category__row">
+					<td class="category__col">
+						<a href="category-fruits.html">
+							<div class="category__div">
+								<img src="{% static 'grocery_app/images/categories/Fruits-and-Vegetables.jpg' %}" width="350px" height="250px">
+								<h3 class="category__name">Fruits & Vegetables</h3>
+							</div>
+						</a>
+					</td>
+					<td class="category__col">
+						<a href="category-beverages.html">
+							<div class="category__div">
+								<img src="{% static 'grocery_app/images/categories/beverage.jpg' %}" width="350px" height="250px">
+								<h3 class="category__name">Beverages</h3>
+							</div>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="category__col">
+						<a href="category-snack-store.html">
+							<div class="category__div">
+								<img src="{% static 'grocery_app/images/categories/snack_store.webp' %}" width="350px" height="250px">
+								<h3 class="category__name">Snack Store</h3>
+							</div>
+						</a>
+					</td>
+					<td class="category__col">
+						<a href="category-cleaning-household.html">
+							<div class="category__div">
+								<img src="{% static 'grocery_app/images/categories/cleaning-n-household.jpg' %}" width="350px" height="250px">
+								<h3 class="category__name">Cleaning & Household</h3>
+							</div>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="category__col">
+						<a href="category-beauty-hygiene.html">
+							<div class="category__div">
+								<img src="{% static 'grocery_app/images/categories/beauty-n-hygiene.jpg' %}" width="350px" height="250px">
+								<h3 class="category__name">Beauty & Hygiene</h3>
+							</div>
+						</a>
+					</td>
+					<td class="category__col">
+						<a href="category-home-kitchen.html">
+							<div class="category__div">
+								<img src="{% static 'grocery_app/images/categories/home-n-kitchen.jpg' %}" width="350px" height="250px">
+								<h3 class="category__name">Home & Kitchen Essentials</h3>
+							</div>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+</body>
+</html>
