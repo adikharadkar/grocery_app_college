@@ -11,5 +11,5 @@ def category(request):
 def category_fruits_vegetables(request):
 	return render(request, 'grocery_app/categories/fruits-and-vegetables.html')
 
-def category_snack_store(request):
-	return render(request, 'grocery_app/categories/snack-store.html')
+def category_beverages(request):
+	return render(request, 'grocery_app/categories/beverages.html')
