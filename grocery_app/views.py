@@ -13,3 +13,15 @@ def category_fruits_vegetables(request):
 
 def category_beverages(request):
 	return render(request, 'grocery_app/categories/beverages.html')
+
+def category_snack_store(request):
+	return render(request, 'grocery_app/categories/snack-store.html')
+
+def category_cleaning_household(request):
+	return render(request, 'grocery_app/categories/cleaning-household.html')
+
+def category_beauty_hygiene(request):
+	return render(request, 'grocery_app/categories/beauty-hygiene.html')
+
+def category_home_kitchen(request):
+	return render(request, 'grocery_app/categories/home-kitchen.html')

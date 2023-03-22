@@ -208,6 +208,9 @@ input:focus {
 .product__div {
 	margin: 10px;
 }
+.category__div:hover {
+	box-shadow: 0 20px 20px 20px #ccc;
+}
 .product__brand {
 	color: purple;
 	text-decoration: underline;
@@ -388,6 +391,8 @@ input:focus {
 	padding: 10px;
 	border-radius: 10px;
 	box-shadow: 0 5px 5px 5px #eee;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
 }
 .categories {
 	margin: auto;
@@ -406,6 +411,11 @@ input:focus {
 	box-shadow: 0 5px 5px 5px #eee;
 	display: flex;
 	margin: 10px;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
+.fruits-vegetables__outer_div:hover {
+	box-shadow: 0 20px 20px 20px #eee;
 }
 .fruits-vegetables__main {
 	margin: auto;
