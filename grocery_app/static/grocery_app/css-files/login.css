@@ -1,0 +1,36 @@
+.login{
+	display: inline-grid;
+	margin:auto;
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 5px 5px 5px #ccc;
+	padding: 40px;
+	margin-top: 80px;
+}
+
+body {
+	margin:auto;
+	text-align: center;
+	background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+
+}
+
+.login_content{
+	margin: 10px;
+}
+
+.username, .password {
+	height: 35px;
+	width: 350px;
+	border: 1px solid #ccc;
+}
+
+.login_btn {
+	height: 35px;
+	width: 350px;
+	background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+}

@@ -25,3 +25,6 @@ def category_beauty_hygiene(request):
 
 def category_home_kitchen(request):
 	return render(request, 'grocery_app/categories/home-kitchen.html')
+
+def login(request):
+	return render(request, 'grocery_app/login.html')

@@ -9,5 +9,6 @@ urlpatterns = [
 	path('shop-by-category/snack-store/', views.category_snack_store, name="category-snack-store"),
 	path('shop-by-category/cleaning-household', views.category_cleaning_household, name="category-cleaning-household"),
 	path('shop-by-category/beauty-hygiene', views.category_beauty_hygiene, name="category-beauty-hygiene"),
-	path('shop-by-category/home-kitchen', views.category_home_kitchen, name="category-home-kitchen")
+	path('shop-by-category/home-kitchen', views.category_home_kitchen, name="category-home-kitchen"),
+	path('login/', views.login, name="app-login")
 ]
